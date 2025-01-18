@@ -21,5 +21,4 @@ function total = prime_days_of_christmas(n)
     end
       total = sum(totalVector) 
 end
-
     
