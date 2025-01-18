@@ -1,0 +1,25 @@
+function total = prime_days_of_christmas(n)
+    if n == 1
+        total = 2
+    else 
+    nprime(1) = 2;
+    nprime(2) = 3;
+     totalVector(1)= 2;
+     totalVector(2) = 5
+       for i = 2 : n-1
+           possiblePrime = nprime(i)+2;
+        for j = 2: possiblePrime-1
+            if ( mod(possiblePrime,j) );
+            continue
+            else possiblePrime = possiblePrime+2 ;
+            end
+            break
+        end
+          nprime(i+1) = possiblePrime
+          totalVector(i+1) = sum(nprime)
+       end   
+    end
+      total = sum(totalVector) 
+end
+
+    
